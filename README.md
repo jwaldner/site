@@ -21,8 +21,13 @@ No build step or dependencies required. These are plain HTML5 files with inline 
 To preview locally, open the files directly in a browser:
 
 ```bash
-xdg-open index.html
+wslview index.html
 ```
+
+Alternative commands:
+
+- Linux desktop: `xdg-open index.html`
+- macOS: `open index.html`
 
 Or serve the folder with any static server:
 
@@ -34,4 +39,8 @@ Then visit `http://localhost:8000`.
 
 ## Contact
 
-Email: <jwaldner.444.dev@gmail.com>
+Email: [jwaldner.444.dev@gmail.com](mailto:jwaldner.444.dev@gmail.com)
+
+[git page](https://jwaldner.github.io/site/)
+
+[public](https://jjw444.dev)
