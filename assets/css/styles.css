@@ -1,0 +1,180 @@
+:root {
+  --bg: #eef3ff;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --muted: #5b6473;
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --border: #e5e7eb;
+  --shadow: 0 12px 30px rgba(37, 99, 235, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background: radial-gradient(circle at top, #f6f9ff 0%, var(--bg) 45%, #e8eefc 100%);
+  color: var(--text);
+}
+
+.page-wrap {
+  width: min(100%, 900px);
+  margin: 0 auto;
+}
+
+.page-wrap.page-wrap-legal {
+  width: min(100%, 800px);
+}
+
+.container {
+  background: var(--surface);
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  color: #1a1a1a;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 12px;
+  letter-spacing: 0.2px;
+}
+
+h2 {
+  margin-top: 30px;
+  color: var(--primary-dark);
+}
+
+p,
+li,
+.meta,
+.effective-date {
+  color: var(--muted);
+}
+
+p {
+  margin-top: 0;
+}
+
+.legal-content p {
+  text-align: justify;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-nav a {
+  margin: 0;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #dbe5ff;
+  background: #f5f8ff;
+  font-weight: 600;
+  transition: all 0.15s ease-in-out;
+}
+
+.top-nav a:hover {
+  background: #e8efff;
+  border-color: #c7d8ff;
+  transform: translateY(-1px);
+}
+
+.top-nav .divider {
+  display: none;
+}
+
+.top-nav a[aria-current="page"] {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.app-card {
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.app-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.meta {
+  font-size: 0.95rem;
+}
+
+.app-card,
+.contact-box,
+.contact-info {
+  border: 1px solid var(--border);
+  background: #fbfcff;
+}
+
+.contact-box,
+.contact-info {
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.effective-date {
+  font-style: italic;
+  text-align: center;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.container {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+body.ready .container {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 12px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}

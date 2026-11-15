@@ -5,18 +5,20 @@ A simple, static HTML site for our Google app developer presence.
 ## Pages
 
 - **`index.html`** — Developer landing page with app listings, support info, and contact details.
-- **`privacy.html`** — Privacy policy page.
+- **`legal/privacy.html`** — Privacy policy page.
+- **`legal/terms.html`** — Terms of Service page for app compliance and policy disclosures.
 
 ## Live Site
 
 View the live site: [Live Page](https://jwaldner.github.io/site/)
 
 - Home: `/`
-- Privacy Policy: `/privacy.html`
+- Privacy Policy: `/legal/privacy.html`
+- Terms of Service: `/legal/terms.html`
 
 ## Development
 
-No build step or dependencies required. These are plain HTML5 files with inline CSS.
+No build step or dependencies required. These are plain static HTML, CSS, and JavaScript files.
 
 To preview locally, open the files directly in a browser:
 
