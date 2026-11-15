@@ -1,0 +1,5 @@
+# app-ads.txt for jjw444.dev
+# Replace the placeholder publisher ID below with your real AdMob publisher ID before monetization review.
+# Example format: google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0
+
+google.com, pub-REPLACE_WITH_YOUR_ADMOB_PUBLISHER_ID, DIRECT, f08c47fec0942fa0

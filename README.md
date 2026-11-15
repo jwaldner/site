@@ -41,7 +41,7 @@ Then visit `http://localhost:8000`.
 
 ## Contact
 
-Email: [jwaldner.444.dev@gmail.com](mailto:jwaldner.444.dev@gmail.com)
+Public Support Email: [contact@jjw444.dev](mailto:contact@jjw444.dev)
 
 [git page](https://jwaldner.github.io/site/)
 
